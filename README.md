@@ -1,3 +1,4 @@
+
 # uts-so
 # Tugas Besar UTS Sistem Operasi
 
@@ -30,3 +31,13 @@ al@Ubuntu:~/uts-so-09011382530142$ ps x | grep backup
   8168 pts/0    S+     0:00 grep backup
 al@Ubuntu:~/uts-so-09011382530142$ kill %1
 [1]+ Terminated              ./script/backup_loop.sh
+
+## Fitur Pengembangan
+Menu Interaktif (script/menu.sh): Memudahkan pengguna memilih opsi backup, lihat log, lihat daftar arsip, restore, atau keluar menggunakan read dan case.
+
+Restore: Fitur untuk mengekstrak file arsip pilihan pengguna ke direktori ~/restore_09011382530142 dengan opsi tar -xzvf ... -C.
+
+## kendala
+Koneksi GitHub terputus (Recv failure): Diatasi dengan memeriksa status jaringan di VM dan mengaktifkan credential helper.
+
+Git Author Identity Unknown: Diatasi dengan mengatur git config --global user.email dan user.name.
